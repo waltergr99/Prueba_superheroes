@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://thumbs.gfycat.com/HauntingFilthyAmericanbobtail-size_restricted.gif");
+}
+
+.img-card {
+    border: 1px solid #fff;
+    width: 16rem;
+    height: 7rem;
+}
+
+.img-card img {
+    width: 15rem;
+    height: 6.5rem;
+    object-fit: fill;
+}
+
+.bg-opacity {
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 10px;
+}
+
+.super {
+    display: flex;
+    justify-content: center;
+    transform: rotate(10deg);
+    overflow: hidden;
+    width: 100%;
+}
+
+.super img {
+    height: 13rem;
+    animation: supermove 5s ease-in infinite;
+}
+
+@keyframes supermove {
+    0% {
+        transform: translate(-150%);
+    }
+    100%{
+        transform: translate(150%);
+    }
+}
+
+@media(min-width: 768px) {
+    .super {
+        width: 100%;
+        transform: unset;
+    }
+
+    .super img {
+        width: 23rem;
+    }
+    @keyframes supermove {
+        0% {
+            transform: translate(-250%);
+        }
+        100%{
+            transform: translate(250%);
+        }
+    }
+}
+
+.img-info {
+    display: flex;
+    justify-content: center;
+}
+
+.img-info img {
+    height: 19rem;
+    width: 25rem;
+}
